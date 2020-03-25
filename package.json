@@ -1,0 +1,13 @@
+{
+  "name": "clay-bootstrap-4",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Clayton Wu <claytonwu@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+  	"start": "./node_modules/.bin/browser-sync start --server --no-notify --files='index.html, *.css, *.js'"
+  },
+  "dependencies": {
+    "browser-sync": "^2.26.7"
+  }
+}
