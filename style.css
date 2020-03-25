@@ -1,6 +1,19 @@
-.container.demo{
+.container.demo {
 	background: #054bd1;
 	height: 100vh;
 	color: white;
 	-webkit-font-smoothing:antialiased;
+	/*max-width:960px;*/
+}
+.container.demo .row {
+	background: :#021d51;
+	border-bottom: 1px solid #000l
+}
+.container.demo .row > div > span {
+	display: block;
+	background: #487bdd;
+	color: white;
+	font-size: 32px;
+	padding: 8px;
+	border: 1px solid #021d51;
 }
