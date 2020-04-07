@@ -20,5 +20,10 @@
 }
 .component.demo {
 	padding: 50px;
-	width: 500px;
+	width: 1280px;
+}
+
+.component.demo .card-columns .card {
+	padding: 50px;
+	width: 400px;
 }
