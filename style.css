@@ -19,11 +19,21 @@
 	border: 1px solid #021d51;
 }
 .component.demo {
-	/*padding: 50px;*/
-	width: 1280px;
+	padding: 50px;
+	/*width: 1280px;*/
 }
-
+/*
 .component.demo .card-columns .card {
 	padding: 50px;
 	width: 400px;
+}
+*/
+.carousel.demo .carousel-item {
+	height: 600px;
+}
+
+.carousel.demo .carousel-item img {
+	min-height: 200px;
+	max-height: 400px;
+	object-fit: cover;
 }
