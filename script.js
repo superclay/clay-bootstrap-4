@@ -1,15 +1,21 @@
 $(document).ready(() => {
-	$('.close-alert').click(() => {
-		$('.alert').alert('close')
-
+	/*
+	$('.carousel').carousel()({
+		interval: 1000
 	})
-
-	$('.alert').on('close.bs.alert', () => {
-		console.log('close alert')
+	*/
+	$('.carousel').on('slide.bs.carousel',(event) => {
+		console.log('slide: ', `
+			方向: ${ event.direction }
+			From: ${ event.from }
+			To: ${ event.to }
+		`)
 	})
-
-	$('.alert').on('closed.bs.alert', () => {
-		console.log('closed alert')
+	$('.carousel').on('slide.bs.carousel',(event) => {
+		console.log('slid: ', `
+			方向: ${ event.direction }
+			From: ${ event.from }
+			To: ${ event.to }
+		`)
 	})
-
 })
