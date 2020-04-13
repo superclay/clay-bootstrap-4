@@ -1,21 +1,16 @@
 $(document).ready(() => {
-	/*
-	$('.carousel').carousel()({
-		interval: 1000
+	
+	$('#dropdown-demo').on('show.bs.dropdown', () => {
+		console.log('show')
 	})
-	*/
-	$('.carousel').on('slide.bs.carousel',(event) => {
-		console.log('slide: ', `
-			方向: ${ event.direction }
-			From: ${ event.from }
-			To: ${ event.to }
-		`)
+	$('#dropdown-demo').on('shown.bs.dropdown', () => {
+		console.log('shown')
 	})
-	$('.carousel').on('slide.bs.carousel',(event) => {
-		console.log('slid: ', `
-			方向: ${ event.direction }
-			From: ${ event.from }
-			To: ${ event.to }
-		`)
+	$('#dropdown-demo').on('hide.bs.dropdown', () => {
+		console.log('hide')
 	})
+	$('#dropdown-demo').on('hidden.bs.dropdown', () => {
+		console.log('hidden')
+	})
+	
 })
