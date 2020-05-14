@@ -1,26 +1,16 @@
 $(document).ready(() => {
 	
-	const list = $('#tab-demo .list-group a')
-	list.click(function (event) {
-		event.preventDefault()
-		$(this).tab('show')
+	$('#modal-demo').on('show.bs.modal', function () {
+		console.log('show')
 	})
-
-	list.on('show.bs.tab', function (event) {
-		console.log(`開始顯示: ${ event.target.getAttribute('href') }`)
-		//console.log("Show")
+	$('#modal-demo').on('shown.bs.modal', function () {
+		console.log('shown')
 	})
-	list.on('shown.bs.tab', function (event) {
-		console.log(`完全顯示: ${ event.target.getAttribute('href') }`)
-		//console.log("shown")
+	$('#modal-demo').on('hide.bs.modal', function () {
+		console.log('hide')
 	})
-	list.on('hide.bs.tab', function (event) {
-		console.log(`開始隱藏: ${ event.target.getAttribute('href') }`)
-		//console.log("hide")
-	})
-	list.on('hidden.bs.tab', function (event) {
-		console.log(`完全隱藏: ${ event.target.getAttribute('href') }`)
-		//console.log("hidden")
+	$('#modal-demo').on('hidden.bs.modal', function () {
+		console.log('hidden')
 	})
 	
 })
