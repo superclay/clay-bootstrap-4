@@ -1,16 +1,26 @@
 $(document).ready(() => {
 	
-	$('#dropdown-demo').on('show.bs.dropdown', () => {
-		console.log('show')
+	const list = $('#tab-demo .list-group a')
+	list.click(function (event) {
+		event.preventDefault()
+		$(this).tab('show')
 	})
-	$('#dropdown-demo').on('shown.bs.dropdown', () => {
-		console.log('shown')
+
+	list.on('show.bs.tab', function (event) {
+		console.log(`開始顯示: ${ event.target.getAttribute('href') }`)
+		//console.log("Show")
 	})
-	$('#dropdown-demo').on('hide.bs.dropdown', () => {
-		console.log('hide')
+	list.on('shown.bs.tab', function (event) {
+		console.log(`完全顯示: ${ event.target.getAttribute('href') }`)
+		//console.log("shown")
 	})
-	$('#dropdown-demo').on('hidden.bs.dropdown', () => {
-		console.log('hidden')
+	list.on('hide.bs.tab', function (event) {
+		console.log(`開始隱藏: ${ event.target.getAttribute('href') }`)
+		//console.log("hide")
+	})
+	list.on('hidden.bs.tab', function (event) {
+		console.log(`完全隱藏: ${ event.target.getAttribute('href') }`)
+		//console.log("hidden")
 	})
 	
 })
