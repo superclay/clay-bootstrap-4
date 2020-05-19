@@ -1,3 +1,15 @@
+.custom-file-control:lang(zh-Hans)::before {
+	content: "選擇";
+}
+.custom-file-control:lang(zh-Hans)::after {
+	content: "選擇文件....";
+}
+.custom-file-control:lang(zh-TW)::before {
+	content: "選擇";
+}
+.custom-file-control:lang(zh-TW)::after {
+	content: "選擇文件....";
+}
 .container.demo {
 	background: #054bd1;
 	height: 100vh;
